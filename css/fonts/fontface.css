@@ -11,3 +11,12 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face {
+  font-family: 'officecodeprolight';
+  src: url('OfficeCodePro-Light.eot'); /* IE9 Compat Modes */
+  src: url('OfficeCodePro-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('OfficeCodePro-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('OfficeCodePro-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('OfficeCodePro-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
