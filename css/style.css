@@ -34,7 +34,9 @@ html, body {
   padding: 0;
   font-size: 16px;
   text-align: left;
+  line-height: 1.6;
   color: #333;
+
 }
 
 * {
@@ -106,7 +108,7 @@ a:hover {
 
 #footer {
   font-family: 'officecodeprolight';
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
   position: relative;
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
@@ -119,5 +121,12 @@ a:hover {
 @media screen and (max-width: 1080px) {
   html, body {
     margin: 0 15px;
+    font-size: 2vw;
+  }
+  h1 {
+    font-size: 8vw;
+  }
+  h2 {
+    font-size: 6vw;
   }
 }
