@@ -1,33 +1,34 @@
 @import url("../css/fonts/fontface.css");
 
-@keyframes fadein {
+@keyframes fadeinup {
     from { opacity: 0; top:150px; }
     to   { opacity: 1; top:0px; }
 }
 
 /* Firefox < 16 */
-@-moz-keyframes fadein {
+@-moz-keyframes fadeinup {
   from { opacity: 0; top:150px; }
   to   { opacity: 1; top:0px; }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
+@-webkit-keyframes fadeinup {
   from { opacity: 0; top:150px; }
   to   { opacity: 1; top:0px; }
 }
 
 /* Internet Explorer */
-@-ms-keyframes fadein {
+@-ms-keyframes fadeinup {
   from { opacity: 0; top:150px; }
   to   { opacity: 1; top:0px; }
 }
 
 /* Opera < 12.1 */
-@-o-keyframes fadein {
+@-o-keyframes fadeinup {
   from { opacity: 0; top:150px; }
   to   { opacity: 1; top:0px; }
 }
+
 
 html, body {
   margin: 0;
@@ -35,29 +36,30 @@ html, body {
   font-size: 16px;
   text-align: left;
   line-height: 1.6;
-  color: #333;
-
+  color: #fff;
+  font-family: 'officecodeprolight', Helvetica, Arial, Sans-Serif;
 }
 
 * {
-  background-color: #FFFFFF;
+  background-color: #15203C;
 }
 
 h1,
 h2 {
-  font-family: "youngserifregular";
+  font-family: "youngserifregular", Georgia, Serif;
 }
 
 h1 {
-  font-size: 6em;
+  font-size: 5.2em;
 }
 
 h2 {
-  font-size: 4em;
+  font-size: 3.5em;
 }
 
 a {
-  border: 1px solid white;
+  border: 1px solid #15203C;
+  /*#F9F9EF*/
   padding: 1px 2px;
   text-decoration: none;
   color: #F39A3C;
@@ -70,52 +72,74 @@ a {
       box-sizing: border-box;
 }
 
-a:hover {
+#main a:hover {
   border: 1px solid #F39A3C;
   background-color: #F39A3C;
-  color: #333;
+  color: #fff;
 
 }
 
 .wrap {
-    max-width: 1080px;
+    max-width: 960px;
     margin: 0 auto;
+}
+
+.location {
+  position: relative;
+  text-align: center;
+  font-size: 10px;
+  top: 25px;
 }
 
 #main {
   position: relative;
-  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: fadein 3s; /* Firefox < 16 */
-      -ms-animation: fadein 3s; /* Internet Explorer */
-       -o-animation: fadein 3s; /* Opera < 12.1 */
-          animation: fadein 3s;
+  -webkit-animation: fadeinup 3s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadeinup 3s; /* Firefox < 16 */
+      -ms-animation: fadeinup 3s; /* Internet Explorer */
+       -o-animation: fadeinup 3s; /* Opera < 12.1 */
+          animation: fadeinup 3s;
 }
 
 .section {
   position: relative;
 }
 
-#intro {
-
+.design {
+  font-style: italic;
 }
 
-#bio {
+.code {
+  font-family: 'officecodeprolight', Helvetica, Arial, Sans-Serif !important;
+  cursor: crosshair;
 }
 
 #contact {
   margin-bottom: 500px;
 }
 
+#contact h2:last-child {
+  text-align: center;
+}
+
 #footer {
-  font-family: 'officecodeprolight';
+  font-family: 'officecodeprolight', Helvetica, Arial, Sans-Serif;
   font-size: 10px;
   text-align: center;
   position: relative;
-  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: fadein 3s; /* Firefox < 16 */
-      -ms-animation: fadein 3s; /* Internet Explorer */
-       -o-animation: fadein 3s; /* Opera < 12.1 */
-          animation: fadein 3s;
+  bottom: 25px;
+  -webkit-animation: fadeinup 3s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadeinup 3s; /* Firefox < 16 */
+      -ms-animation: fadeinup 3s; /* Internet Explorer */
+       -o-animation: fadeinup 3s; /* Opera < 12.1 */
+          animation: fadeinup 3s;
+}
+
+#social a {
+  font-size: 24px;
+}
+
+#social a:hover {
+  color: #fff;
 }
 
 @media screen and (max-width: 1080px) {
